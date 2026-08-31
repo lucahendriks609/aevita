@@ -1,0 +1,12 @@
+{
+  "pkg": "aevita-design-system",
+  "globalName": "AevitaDesignSystem",
+  "shape": "package",
+  "cssEntry": "src/styles.css",
+  "guidelinesGlob": "guidelines/*.md",
+  "readmeHeader": ".design-sync/conventions.md",
+  "overrides": {
+    "StatItem": { "cardMode": "column" },
+    "Card": { "cardMode": "column" }
+  }
+}

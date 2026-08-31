@@ -1,0 +1,22 @@
+{
+  "name": "aevita-design-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aevita brand component library — reconstructed from the published design-system reference so it can be synced to claude.ai/design.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

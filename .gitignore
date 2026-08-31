@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+# design-sync: staged converter scripts + their deps, regenerated build output,
+# machine-local verification state.
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules

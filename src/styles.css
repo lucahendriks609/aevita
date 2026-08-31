@@ -1,0 +1,494 @@
+/* ============================================================
+   AEVITA DESIGN SYSTEM — global entry point
+   Consumers link this ONE file. It only @imports token layers.
+   ============================================================ */
+
+/* ============================================================
+   AEVITA — WEBFONTS
+   Comfortaa is the Aevita brand typeface (per brandbook).
+   It ships on Google Fonts, so we load it from there — this is
+   the real brand font, not a substitution.
+   Weights: 300 (Light) · 400 (Regular) · 500 (Medium)
+            600 (SemiBold) · 700 (Bold)
+   ============================================================ */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/comfortaa-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/comfortaa-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/comfortaa-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/comfortaa-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/comfortaa-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/comfortaa-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/comfortaa-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/comfortaa-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic-ext.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/comfortaa-cyrillic.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/comfortaa-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/comfortaa-vietnamese.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/comfortaa-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* ============================================================
+   AEVITA — COLOR TOKENS
+   Source of truth: Aevita_Brandbook.pdf (Jessica Doornbos)
+   + Aevita web design/styles.css (production website)
+   ============================================================ */
+
+:root {
+  /* ---- Brand core (brandbook) ---- */
+  --aev-mindful-mint:  #00BC8E;  /* Mindful Mint — primary accent / action */
+  --aev-boost-blue:    #3753F0;  /* Boost Blue — primary brand / headings  */
+  --aev-balance-blue:  #338EF0;  /* Balance Blue — secondary blue          */
+  --aev-brave-blue:    #97C7F7;  /* Brave Blue — soft supportive blue       */
+  --aev-lovely-lilac:  #BDC2FF;  /* Lovely Lilac — accent (female audience) */
+  --aev-dynamic-dark:  #002327;  /* Dynamic Dark — TEXT ONLY (per brandbook)*/
+  --aev-wise-white:    #F2F7F8;  /* Wise White — light neutral surface      */
+
+  /* ---- Blue scale (derived, used across the site) ---- */
+  --blue:         #3753F0;
+  --blue-mid:     #4D67F2;
+  --blue-light:   #E8ECFE;
+  --blue-xlight:  #F2F4FF;
+
+  /* ---- Teal / mint scale ---- */
+  --teal:         #00BC8E;
+  --teal-mid:     #00CC9A;
+  --teal-dark:    #00A37C;
+  --teal-light:   #E0F7F1;
+  --teal-xlight:  #F0FBF8;
+
+  /* ---- Coral (website-only accent — NOT in brandbook; use sparingly) ---- */
+  --coral:        #FF6B47;
+  --coral-dark:   #E85C3A;
+  --coral-light:  #FFF0EC;
+
+  /* ---- Neutrals & text ---- */
+  --dark:         #002327;
+  --text:         #002327;
+  --muted:        #4A6B70;
+  --muted-light:  #7AABB0;
+  --white:        #FFFFFF;
+  --cream:        #FAFFFE;
+  --light:        #F2F7F8;
+  --border:       #D8EEE9;
+  --border-light: #EAF5F2;
+
+  /* ---- Gradients ---- */
+  /* Brandbook: use an angle of -60deg across the blue family into mint.        */
+  /* The site standardises on a 135deg mint→blue signature gradient.            */
+  --gradient:      linear-gradient(135deg, #00BC8E 0%, #3753F0 100%); /* @kind color */
+  --gradient-r:    linear-gradient(135deg, #3753F0 0%, #00BC8E 100%); /* @kind color */
+  --gradient-brand:linear-gradient(-60deg, #BDC2FF 0%, #338EF0 45%, #00BC8E 100%); /* @kind color */
+  --gradient-soft: linear-gradient(135deg, #E0F7F1 0%, #E8ECFE 100%); /* @kind color */
+  --gradient-warm: linear-gradient(135deg, #F0FBF8 0%, #F2F4FF 100%); /* @kind color */
+  --gradient-hero: linear-gradient(160deg, #EEF0FF 0%, #E5FAF6 100%); /* @kind color */
+
+  /* ---- Semantic aliases ---- */
+  --color-primary:        var(--blue);
+  --color-action:         var(--teal);
+  --color-text:           var(--text);
+  --color-text-muted:     var(--muted);
+  --surface-page:         var(--cream);
+  --surface-card:         var(--white);
+  --surface-subtle:       var(--light);
+  --surface-teal:         var(--teal-light);
+  --surface-blue:         var(--blue-light);
+  --border-default:       var(--border);
+  --link:                 var(--blue);
+  --link-hover:           var(--teal-dark);
+  --focus-ring:           0 0 0 3px rgba(55,83,240,0.15); /* @kind shadow */
+}
+
+/* ============================================================
+   AEVITA — TYPOGRAPHY TOKENS
+   Typeface: Comfortaa (brandbook). Weights: 300/400/500/600/700.
+   Rounded geometric sans — friendly, warm, human.
+   ============================================================ */
+
+:root {
+  /* ---- Families ---- */
+  --font-brand: 'Comfortaa', system-ui, -apple-system, sans-serif;
+  --font-body:  'Comfortaa', system-ui, -apple-system, sans-serif;
+
+  /* ---- Weights (the Comfortaa family — "speel met diktes") ---- */
+  --fw-light:    300; /* @kind font */
+  --fw-regular:  400; /* @kind font */
+  --fw-medium:   500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold:     700; /* @kind font */
+
+  /* ---- Type scale (fluid where the site uses clamp) ---- */
+  --fs-display: clamp(2rem, 5vw, 3.4rem);   /* @kind font */
+  --fs-h1:      clamp(2rem, 5vw, 3.4rem);   /* @kind font */
+  --fs-h2:      clamp(1.65rem, 3.5vw, 2.5rem); /* @kind font */
+  --fs-h3:      clamp(1.2rem, 2.5vw, 1.55rem); /* @kind font */
+  --fs-h4:      1.05rem;
+  --fs-lead:    clamp(1rem, 2vw, 1.15rem); /* @kind font */
+  --fs-body:    1rem;
+  --fs-sm:      0.875rem;
+  --fs-xs:      0.78rem;
+  --fs-eyebrow: 0.72rem;
+
+  /* ---- Line heights ---- */
+  --lh-tight:   1.15; /* @kind font */
+  --lh-heading: 1.2;  /* @kind font */
+  --lh-snug:    1.3;  /* @kind font */
+  --lh-body:    1.8;  /* @kind font */
+  --lh-relaxed: 1.85; /* @kind font */
+
+  /* ---- Letter spacing ---- */
+  --ls-display: -0.02em;   /* @kind font */
+  --ls-eyebrow: 0.12em;    /* @kind font */
+  --ls-body:    0;         /* @kind font */
+}
+
+/* ============================================================
+   AEVITA — SPACING, RADII, SHADOWS, MOTION, LAYOUT
+   Values lifted verbatim from the production stylesheet.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale ---- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-30: 120px;
+
+  /* Section rhythm (fluid) */
+  --section-y:    clamp(64px, 8vw, 120px); /* @kind spacing */
+  --section-y-sm: clamp(48px, 6vw, 80px);  /* @kind spacing */
+
+  /* ---- Corner radii ---- */
+  --radius-xs:   8px;
+  --radius-sm:   12px;
+  --radius:      20px;   /* default card                 */
+  --radius-lg:   32px;
+  --radius-xl:   48px;
+  --radius-pill: 100px;  /* buttons, badges, chips        */
+
+  /* ---- Shadows (blue-tinted, soft) ---- */
+  --shadow-xs: 0 1px 6px  rgba(55,83,240,0.05);
+  --shadow-sm: 0 2px 12px rgba(55,83,240,0.07);
+  --shadow:    0 4px 24px rgba(55,83,240,0.10);
+  --shadow-md: 0 8px 40px rgba(55,83,240,0.14);
+  --shadow-lg: 0 16px 60px rgba(55,83,240,0.18);
+  /* dark-tinted (imagery / phones) */
+  --shadow-img: 0 8px 32px rgba(0,35,39,0.12);
+
+  /* Coloured action-button shadows */
+  --shadow-teal: 0 4px 20px rgba(0,188,142,0.32);
+  --shadow-blue: 0 4px 20px rgba(55,83,240,0.28);
+
+  /* ---- Motion ---- */
+  --transition:      all 0.25s ease;                 /* @kind other */
+  --transition-slow: all 0.4s ease;                  /* @kind other */
+  --ease-reveal:     cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-pop:        cubic-bezier(0.34, 1.56, 0.64, 1); /* @kind other */
+
+  /* ---- Layout ---- */
+  --max-w:   1200px;                 /* @kind spacing */
+  --max-w-wide: 1280px;              /* @kind spacing */
+  --side-p:  clamp(20px, 5vw, 80px); /* @kind spacing */
+  --nav-h:   72px;                   /* @kind spacing */
+}
+
+/* ============================================================
+   AEVITA — BASE ELEMENT STYLES
+   Minimal resets + element defaults so specimen cards and
+   consumers get the brand look without pulling in the full site.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--cream);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-brand);
+  margin: 0;
+}
+h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); line-height: var(--lh-tight); letter-spacing: var(--ls-display); color: var(--blue); }
+h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); line-height: var(--lh-heading); letter-spacing: var(--ls-display); color: var(--blue); }
+h3 { font-size: var(--fs-h3); font-weight: var(--fw-semibold); line-height: var(--lh-snug); color: var(--dark); }
+h4 { font-size: var(--fs-h4); font-weight: var(--fw-semibold); color: var(--dark); }
+
+p { line-height: var(--lh-body); color: var(--text); margin: 0; }
+
+a { color: var(--link); text-decoration: none; transition: color 0.2s ease; }
+a:hover { color: var(--link-hover); }
+
+img { max-width: 100%; display: block; }
+
+::selection { background: var(--blue-light); color: var(--blue); }
+
+
