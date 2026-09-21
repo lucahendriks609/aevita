@@ -5,10 +5,10 @@
     "tagline": "Een selectie uit Alle Eiwitrijke Recepten — Aevita"
   },
   "sections": [
-    { "id": "lactosevrij", "label": "Lactosevrij", "source_title": "Lactosevrije Eiwitrijke Recepten", "color": "#E85C3A", "bg": "#FFF0EC" },
+    { "id": "lactosevrij", "label": "Lactosevrij", "source_title": "Lactosevrije Eiwitrijke Recepten", "color": "#00BC8E", "bg": "#E0F7F1" },
     { "id": "glp1", "label": "GLP-1 programma", "source_title": "Eiwit- & Vezelrijke Recepten (GLP-1 Behandeling)", "color": "#3753F0", "bg": "#E8ECFE" },
-    { "id": "energie", "label": "Energie & vermoeidheid", "source_title": "Eiwit- & Energierijke Recepten (bij vermoeidheid)", "color": "#00A37C", "bg": "#E0F7F1" },
-    { "id": "snel", "label": "Snel & druk", "source_title": "Snelle Eiwitrijke Recepten (voor een drukke werkdag)", "color": "#5B4FCF", "bg": "#EEECFB" }
+    { "id": "energie", "label": "Energie & vermoeidheid", "source_title": "Eiwit- & Energierijke Recepten (bij vermoeidheid)", "color": "#338EF0", "bg": "#E5F1FE" },
+    { "id": "snel", "label": "Snel & druk", "source_title": "Snelle Eiwitrijke Recepten (voor een drukke werkdag)", "color": "#002327", "bg": "#EEF0FF" }
   ],
   "recipes": [
     { "id": "lac-01", "title": "Lactosevrije kwark bowl", "section": "lactosevrij", "eiwit": "±20 g", "kcal": null,

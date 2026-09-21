@@ -5,12 +5,12 @@
   --blue-light: #E8ECFE;
   --blue-xlight: #F2F4FF;
   --teal: #00BC8E;
-  --teal-dark: #00A37C;
   --teal-light: #E0F7F1;
   --teal-xlight: #F0FBF8;
-  --coral: #FF6B47;
-  --coral-dark: #E85C3A;
-  --coral-light: #FFF0EC;
+  --balance-blue: #338EF0;
+  --balance-blue-light: #E5F1FE;
+  --brave-blue: #97C7F7;
+  --lilac-light: #EEF0FF;
   --cream: #FAFFFE;
   --dark: #002327;
   --muted: #4A6B70;
@@ -276,7 +276,7 @@ html, body {
   padding: 5mm 8mm;
   text-align: center;
 }
-.nutrition-cell .val { font-size: 22px; font-weight: 700; color: var(--teal-dark); line-height: 1; }
+.nutrition-cell .val { font-size: 22px; font-weight: 700; color: var(--teal); line-height: 1; }
 .nutrition-cell .lbl { font-size: 10px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2mm; }
 
 .body-grid { display: grid; grid-template-columns: 68mm 1fr; gap: 10mm; flex: 1; }
@@ -303,7 +303,7 @@ html, body {
   left: 0; top: 5px;
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: var(--coral);
+  background: var(--teal);
 }
 
 .steps ol { list-style: none; counter-reset: step; }

@@ -62,8 +62,8 @@ function guidelinesPage() {
     <div class="guidelines-lead">Er is niet één juist getal voor calorieën, eiwit en vezels — je behoefte hangt af van je gewicht, lengte, leeftijd, activiteitsniveau en doel. Hieronder eerst een algemene richtlijn, daarna reken je je eigen cijfer uit.</div>
 
     <div class="quickref-row">
-      <div class="quickref-cell" style="background:#FFF0EC">
-        <div class="qr-val" style="color:#E85C3A">±2000-2500</div>
+      <div class="quickref-cell" style="background:#E5F1FE">
+        <div class="qr-val" style="color:#338EF0">±2000-2500</div>
         <div class="qr-lbl">Kcal per dag</div>
       </div>
       <div class="quickref-cell" style="background:#E8ECFE">
@@ -71,15 +71,15 @@ function guidelinesPage() {
         <div class="qr-lbl">Eiwit per dag</div>
       </div>
       <div class="quickref-cell" style="background:#E0F7F1">
-        <div class="qr-val" style="color:#00A37C">30-40 g</div>
+        <div class="qr-val" style="color:#00BC8E">30-40 g</div>
         <div class="qr-lbl">Vezels per dag</div>
       </div>
     </div>
     <div class="section-transition">Wil je dit preciezer op jouw situatie afstemmen? Zo bereken je het zelf:</div>
 
     <div class="formula-section">
-      <span class="cat-label" style="background:#FFF0EC;color:#E85C3A">Calorieën</span>
-      <div class="formula-box" style="background:#FFF0EC">
+      <span class="cat-label" style="background:#E5F1FE;color:#338EF0">Calorieën</span>
+      <div class="formula-box" style="background:#E5F1FE">
         <div class="f-formula">Stap 1 — basaalmetabolisme (BMR), Mifflin-St Jeor:</div>
         <div class="f-steps">
           Man: 10 × gewicht (kg) + 6,25 × lengte (cm) − 5 × leeftijd + 5<br>
@@ -107,7 +107,7 @@ function guidelinesPage() {
     </div>
 
     <div class="formula-section">
-      <span class="cat-label" style="background:#E0F7F1;color:#00A37C">Vezels</span>
+      <span class="cat-label" style="background:#E0F7F1;color:#00BC8E">Vezels</span>
       <div class="formula-box" style="background:#E0F7F1">
         <div class="f-formula">Formule (Gezondheidsraad): 14 g vezel per 1000 kcal inname</div>
         <div class="f-example">Voorbeeld: bij 2000 kcal/dag → (2000 ÷ 1000) × 14 = <b>28 g vezels/dag</b>.</div>
