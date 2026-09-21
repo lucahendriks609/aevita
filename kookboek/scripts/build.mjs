@@ -59,7 +59,23 @@ function guidelinesPage() {
   return `
   <section class="page guidelines">
     <h2>Bereken je eigen richtlijn</h2>
-    <div class="guidelines-lead">Er is niet één juist getal voor calorieën, eiwit en vezels — je behoefte hangt af van je gewicht, lengte, leeftijd, activiteitsniveau en doel. Zo bereken je een richtlijn die bij jou past.</div>
+    <div class="guidelines-lead">Er is niet één juist getal voor calorieën, eiwit en vezels — je behoefte hangt af van je gewicht, lengte, leeftijd, activiteitsniveau en doel. Hieronder eerst een algemene richtlijn, daarna reken je je eigen cijfer uit.</div>
+
+    <div class="quickref-row">
+      <div class="quickref-cell" style="background:#FFF0EC">
+        <div class="qr-val" style="color:#E85C3A">±2000-2500</div>
+        <div class="qr-lbl">Kcal per dag</div>
+      </div>
+      <div class="quickref-cell" style="background:#E8ECFE">
+        <div class="qr-val" style="color:#3753F0">0,8-2,0 g/kg</div>
+        <div class="qr-lbl">Eiwit per dag</div>
+      </div>
+      <div class="quickref-cell" style="background:#E0F7F1">
+        <div class="qr-val" style="color:#00A37C">30-40 g</div>
+        <div class="qr-lbl">Vezels per dag</div>
+      </div>
+    </div>
+    <div class="section-transition">Wil je dit preciezer op jouw situatie afstemmen? Zo bereken je het zelf:</div>
 
     <div class="formula-section">
       <span class="cat-label" style="background:#FFF0EC;color:#E85C3A">Calorieën</span>
@@ -105,6 +121,16 @@ function guidelinesPage() {
   </section>`;
 }
 
+const cameraIcon = '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h1.5l1-1.5h9l1 1.5H19a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg>';
+
+function recipeImageSlot(r) {
+  return `
+    <div class="recipe-image">
+      ${cameraIcon}
+      <div class="placeholder-label">Foto — ${esc(r.title)}</div>
+    </div>`;
+}
+
 function nutritionRow(r) {
   const cells = [];
   if (r.eiwit) cells.push(`<div class="nutrition-cell"><div class="val">${esc(r.eiwit)}</div><div class="lbl">Eiwit</div></div>`);
@@ -124,6 +150,8 @@ function recipePage(r, pageNum) {
       <span class="cat-pill" style="background:${sec.bg};color:${sec.color}">${esc(sec.label)}</span>
       <h2>${esc(r.title)}</h2>
     </div>
+
+    ${recipeImageSlot(r)}
 
     ${nutritionRow(r)}
 

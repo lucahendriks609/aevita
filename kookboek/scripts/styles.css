@@ -21,6 +21,7 @@
   --lilac: #BDC2FF;
   --gradient-brand: linear-gradient(-60deg, #BDC2FF 0%, #338EF0 45%, #00BC8E 100%);
   --gradient: linear-gradient(135deg, #00BC8E 0%, #3753F0 100%);
+  --gradient-soft: linear-gradient(135deg, #E0F7F1 0%, #E8ECFE 100%);
   --font-brand: 'Comfortaa', system-ui, -apple-system, sans-serif;
   --radius: 20px;
   --radius-lg: 32px;
@@ -106,6 +107,32 @@ html, body {
   line-height: 1.65;
   margin-bottom: 10mm;
 }
+.quickref-row {
+  display: flex;
+  gap: 4mm;
+  margin-bottom: 8mm;
+}
+.quickref-cell {
+  flex: 1;
+  border-radius: var(--radius);
+  padding: 5mm 3mm;
+  text-align: center;
+}
+.quickref-cell .qr-val { font-size: 20px; font-weight: 700; line-height: 1; }
+.quickref-cell .qr-lbl {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-top: 2mm;
+}
+.guidelines .section-transition {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6mm;
+}
+
 .formula-section { margin-bottom: 6mm; }
 .formula-section .cat-label {
   display: inline-flex;
@@ -194,6 +221,27 @@ html, body {
   font-weight: 700;
   border-radius: var(--radius-pill);
   padding: 2px 7px;
+}
+
+/* ---------- RECIPE IMAGE SLOT ---------- */
+.recipe-image {
+  width: 100%;
+  height: 45mm;
+  border-radius: var(--radius-lg);
+  background: var(--gradient-soft);
+  border: 1.5px dashed var(--muted-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2mm;
+  margin: 6mm 0 7mm;
+}
+.recipe-image svg { width: 24px; height: 24px; stroke: var(--muted); }
+.recipe-image .placeholder-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 /* ---------- RECIPE PAGE ---------- */
