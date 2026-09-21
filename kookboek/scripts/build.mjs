@@ -6,18 +6,13 @@ import { chromium } from 'playwright';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 
-const dataFile = process.argv[2] || path.join(root, 'data', 'recipes.sample.json');
-const outName = process.argv[3] || 'aevita-kookboek-preview';
+const dataFile = process.argv[2] || path.join(root, 'data', 'recipes.json');
+const outName = process.argv[3] || 'aevita-kookboek';
 
 const data = JSON.parse(await readFile(dataFile, 'utf8'));
 const styles = await readFile(path.join(__dirname, 'styles.css'), 'utf8');
 
-const catById = Object.fromEntries(data.categories.map(c => [c.id, c]));
-
-const icons = {
-  clock: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>',
-  servings: '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v6a2 2 0 0 0 2 2v12"/><path d="M8 2v6a2 2 0 0 1-2 2v0"/><path d="M17 2c-1.5 2-2 4-2 7 0 2 1 3 2 3v10"/></svg>',
-};
+const sectionById = Object.fromEntries(data.sections.map(s => [s.id, s]));
 
 function esc(s) {
   return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -37,8 +32,8 @@ function coverPage() {
 }
 
 function tocPage(pageNumById) {
-  const sections = data.categories.map(cat => {
-    const items = data.recipes.filter(r => r.category === cat.id);
+  const sections = data.sections.map(sec => {
+    const items = data.recipes.filter(r => r.section === sec.id);
     if (!items.length) return '';
     const rows = items.map(r => `
       <div class="toc-row">
@@ -47,7 +42,7 @@ function tocPage(pageNumById) {
       </div>`).join('');
     return `
       <div class="toc-section">
-        <span class="cat-label" style="background:${cat.bg};color:${cat.color}">${esc(cat.label)}</span>
+        <span class="cat-label" style="background:${sec.bg};color:${sec.color}">${esc(sec.label)}</span>
         ${rows}
       </div>`;
   }).join('');
@@ -60,31 +55,27 @@ function tocPage(pageNumById) {
   </section>`;
 }
 
+function nutritionRow(r) {
+  const cells = [];
+  if (r.eiwit) cells.push(`<div class="nutrition-cell"><div class="val">${esc(r.eiwit)}</div><div class="lbl">Eiwit</div></div>`);
+  if (r.kcal) cells.push(`<div class="nutrition-cell"><div class="val">${esc(r.kcal)}</div><div class="lbl">Kcal</div></div>`);
+  if (!cells.length) return '';
+  return `<div class="nutrition-row">${cells.join('')}</div>`;
+}
+
 function recipePage(r, pageNum) {
-  const cat = catById[r.category];
+  const sec = sectionById[r.section];
   const ingredients = r.ingredients.map(i => `<li>${esc(i)}</li>`).join('');
   const steps = r.steps.map(s => `<li>${esc(s)}</li>`).join('');
-  const n = r.nutrition;
 
   return `
   <section class="page recipe">
     <div class="recipe-header">
-      <span class="cat-pill" style="background:${cat.bg};color:${cat.color}">${esc(cat.label)}</span>
+      <span class="cat-pill" style="background:${sec.bg};color:${sec.color}">${esc(sec.label)}</span>
       <h2>${esc(r.title)}</h2>
-      <div class="recipe-subtitle">${esc(r.subtitle)}</div>
     </div>
 
-    <div class="meta-row">
-      <span class="meta-chip">${icons.clock}${esc(r.prep_time)}</span>
-      <span class="meta-chip">${icons.servings}${esc(r.servings)}</span>
-    </div>
-
-    <div class="nutrition-grid">
-      <div class="nutrition-cell"><div class="val">${n.kcal}</div><div class="lbl">kcal</div></div>
-      <div class="nutrition-cell"><div class="val">${n.eiwit_g}g</div><div class="lbl">Eiwit</div></div>
-      <div class="nutrition-cell"><div class="val">${n.koolhydraten_g}g</div><div class="lbl">Koolhydraten</div></div>
-      <div class="nutrition-cell"><div class="val">${n.vet_g}g</div><div class="lbl">Vet</div></div>
-    </div>
+    ${nutritionRow(r)}
 
     <div class="body-grid">
       <div class="ingredients">
@@ -97,9 +88,9 @@ function recipePage(r, pageNum) {
       </div>
     </div>
 
-    <div class="dietist-tip">
-      <div class="tip-icon">i</div>
-      <div class="tip-text"><b>Tip van de diëtist —</b> ${esc(r.dietist_tip)}</div>
+    <div class="source-note">
+      <div class="note-icon">i</div>
+      <div class="note-text"><b>${esc(sec.label)} —</b> onderdeel van "${esc(sec.source_title)}", samengesteld door de officiële diëtist van Aevita.</div>
     </div>
 
     <div class="page-footer">

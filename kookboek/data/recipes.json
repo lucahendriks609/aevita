@@ -1,0 +1,229 @@
+{
+  "book": {
+    "title": "Het Aevita Kookboek",
+    "subtitle": "25 eiwitrijke recepten, samengesteld door de officiële diëtist van Aevita",
+    "tagline": "Een selectie uit Alle Eiwitrijke Recepten — Aevita"
+  },
+  "sections": [
+    { "id": "lactosevrij", "label": "Lactosevrij", "source_title": "Lactosevrije Eiwitrijke Recepten", "color": "#E85C3A", "bg": "#FFF0EC" },
+    { "id": "glp1", "label": "GLP-1 programma", "source_title": "Eiwit- & Vezelrijke Recepten (GLP-1 Behandeling)", "color": "#3753F0", "bg": "#E8ECFE" },
+    { "id": "energie", "label": "Energie & vermoeidheid", "source_title": "Eiwit- & Energierijke Recepten (bij vermoeidheid)", "color": "#00A37C", "bg": "#E0F7F1" },
+    { "id": "snel", "label": "Snel & druk", "source_title": "Snelle Eiwitrijke Recepten (voor een drukke werkdag)", "color": "#5B4FCF", "bg": "#EEECFB" }
+  ],
+  "recipes": [
+    { "id": "lac-01", "title": "Lactosevrije kwark bowl", "section": "lactosevrij", "eiwit": "±20 g", "kcal": null,
+      "ingredients": ["200 g lactosevrije magere kwark", "Handje blauwe bessen", "1 el chiazaad (optioneel: noten)"],
+      "steps": [
+        "Schep de kwark in een kom.",
+        "Was de blauwe bessen en verdeel ze over de kwark.",
+        "Strooi het chiazaad (en eventueel de noten) erover.",
+        "Meng licht door elkaar en serveer direct."
+      ] },
+    { "id": "lac-02", "title": "Omelet met spinazie en tomaat", "section": "lactosevrij", "eiwit": "±15-20 g", "kcal": null,
+      "ingredients": ["2-3 eieren", "Spinazie", "Kleine tomaat"],
+      "steps": [
+        "Klop de eieren los in een kom met een snufje zout en peper.",
+        "Verhit een klein beetje olie of boter in een koekenpan op middelhoog vuur.",
+        "Voeg de spinazie en de in stukjes gesneden tomaat toe en laat de spinazie kort slinken.",
+        "Giet het eimengsel erover en bak op laag vuur 3-4 minuten tot de omelet gaar is.",
+        "Vouw dubbel en serveer warm."
+      ] },
+    { "id": "lac-06", "title": "Lactosevrije overnight oats", "section": "lactosevrij", "eiwit": "±20 g", "kcal": null,
+      "ingredients": ["40 g havermout", "150 ml lactosevrije melk of sojadrink", "100 g lactosevrije kwark", "1 tl chiazaad", "Fruit naar keuze"],
+      "steps": [
+        "Meng de havermout, melk, kwark en chiazaad in een pot of kom.",
+        "Roer goed door tot alles gelijkmatig gemengd is.",
+        "Dek af en zet minimaal 4 uur, bij voorkeur een hele nacht, in de koelkast.",
+        "Roer voor het serveren nog eens door en top af met vers fruit naar keuze."
+      ] },
+    { "id": "lac-07", "title": "Zalm met groenten uit de oven", "section": "lactosevrij", "eiwit": "±25-30 g", "kcal": null,
+      "ingredients": ["120-150 g zalm", "Courgette, broccoli en/of asperges", "Olijfolie", "Citroen"],
+      "steps": [
+        "Verwarm de oven voor op 200°C.",
+        "Snijd de groenten in gelijke stukken en verdeel ze over een bakplaat.",
+        "Besprenkel de groenten met olijfolie en leg de zalmfilet erbovenop.",
+        "Bak 15-20 minuten tot de zalm gaar is en de groenten zacht zijn.",
+        "Werk af met een scheutje citroensap en serveer direct."
+      ] },
+    { "id": "lac-09", "title": "Lactosevrije eiwitsmoothie", "section": "lactosevrij", "eiwit": "±20-25 g", "kcal": null,
+      "ingredients": ["150 ml lactosevrije melk of sojadrink", "150 g lactosevrije kwark", "½ banaan", "Bessen naar keuze"],
+      "steps": [
+        "Doe alle ingrediënten in een blender.",
+        "Blend 30-60 seconden tot een gladde, romige smoothie.",
+        "Voeg eventueel wat extra melk toe als de smoothie te dik is.",
+        "Giet in een glas en serveer direct."
+      ] },
+    { "id": "lac-10", "title": "Kikkererwten-kipsalade", "section": "lactosevrij", "eiwit": "±25-30 g", "kcal": null,
+      "ingredients": ["75-100 g kip", "75 g kikkererwten", "Komkommer", "Tomaat", "Peterselie", "Citroen", "Olijfolie"],
+      "steps": [
+        "Gaar de kip (gegrild of gebakken) en snijd in reepjes.",
+        "Spoel de kikkererwten af en laat uitlekken.",
+        "Snijd de komkommer en tomaat in stukjes en hak de peterselie fijn.",
+        "Meng alle ingrediënten in een kom.",
+        "Breng op smaak met citroensap en olijfolie."
+      ] },
+
+    { "id": "glp-03", "title": "Volkoren wrap met kip", "section": "glp1", "eiwit": "±40 g", "kcal": "±430",
+      "ingredients": ["1 volkoren wrap", "100 g kip", "Sla", "Tomaat", "Komkommer", "¼ avocado", "Yoghurtdressing"],
+      "steps": [
+        "Gaar de kip en snijd in reepjes of blokjes.",
+        "Snijd de sla, tomaat, komkommer en avocado.",
+        "Beleg de wrap met de kip en groenten.",
+        "Verdeel de yoghurtdressing erover.",
+        "Rol de wrap stevig op en snijd eventueel doormidden."
+      ] },
+    { "id": "glp-04", "title": "Hüttenkäse lunchbowl", "section": "glp1", "eiwit": "±27 g", "kcal": "±360",
+      "ingredients": ["175 g hüttenkäse", "Rauwkost", "75 g kikkererwten", "10 g pompoenpitten"],
+      "steps": [
+        "Schep de hüttenkäse in een kom.",
+        "Voeg de rauwkost en kikkererwten toe.",
+        "Strooi de pompoenpitten erover.",
+        "Meng licht door elkaar en serveer."
+      ] },
+    { "id": "glp-06", "title": "Zalm met broccoli & krieltjes", "section": "glp1", "eiwit": "±35 g", "kcal": "±500",
+      "ingredients": ["120 g zalm", "200 g broccoli", "150 g krieltjes", "Citroen", "Kruiden"],
+      "steps": [
+        "Breng een pan water aan de kook voor de krieltjes.",
+        "Kook de krieltjes circa 15 minuten en de broccoli de laatste 5-7 minuten mee.",
+        "Bak of gaar de zalm ondertussen 10-12 minuten in de oven of pan met de kruiden.",
+        "Verdeel alles over een bord en werk af met citroensap."
+      ] },
+    { "id": "glp-07", "title": "Linzensoep met kip", "section": "glp1", "eiwit": "±42 g", "kcal": "±400",
+      "ingredients": ["150 g linzen", "100 g kip", "Wortel", "Courgette", "Tomaat", "Ui", "Lichte bouillon"],
+      "steps": [
+        "Snipper de ui en snijd de wortel, courgette en tomaat in stukjes.",
+        "Fruit de ui en groenten 3-4 minuten aan in een soeppan.",
+        "Voeg de bouillon en linzen toe en breng aan de kook.",
+        "Voeg de kip toe en laat 15-20 minuten zachtjes koken tot de linzen gaar zijn.",
+        "Breng op smaak en serveer warm."
+      ] },
+    { "id": "glp-08", "title": "Tonijn-kikkererwtensalade", "section": "glp1", "eiwit": "±34 g", "kcal": "±330",
+      "ingredients": ["100 g tonijn", "100 g kikkererwten", "Komkommer", "Tomaat", "Paprika", "Rucola", "Citroen"],
+      "steps": [
+        "Laat de tonijn en kikkererwten uitlekken.",
+        "Snijd de komkommer, tomaat en paprika in stukjes.",
+        "Meng alle ingrediënten met de rucola in een kom.",
+        "Breng op smaak met citroensap."
+      ] },
+    { "id": "glp-09", "title": "Volkoren pasta met kip", "section": "glp1", "eiwit": "±42 g", "kcal": "±480",
+      "ingredients": ["60 g volkoren pasta", "100 g kip", "Courgette", "Paprika", "Champignons", "Tomatensaus"],
+      "steps": [
+        "Kook de pasta volgens de verpakking gaar.",
+        "Snijd de kip, courgette, paprika en champignons in stukken.",
+        "Bak de kip en groenten in een pan tot de kip gaar is.",
+        "Voeg de tomatensaus toe en laat kort meeverwarmen.",
+        "Meng de saus door de afgegoten pasta en serveer."
+      ] },
+    { "id": "glp-11", "title": "Kip-quinoabowl", "section": "glp1", "eiwit": "39 g", "kcal": "±390",
+      "ingredients": ["100 g kip", "75 g quinoa", "100 g broccoli", "50 g kikkererwten"],
+      "steps": [
+        "Kook de quinoa volgens de verpakking gaar.",
+        "Stoom of kook de broccoli 5-7 minuten.",
+        "Bak de kip in een pan tot gaar en snijd in stukken.",
+        "Verdeel de quinoa, broccoli, kip en kikkererwten over een kom."
+      ] },
+    { "id": "glp-14", "title": "Kabeljauw met zoete aardappel", "section": "glp1", "eiwit": "32 g", "kcal": "±360",
+      "ingredients": ["125 g kabeljauw", "150 g zoete aardappel", "200 g groente"],
+      "steps": [
+        "Verwarm de oven voor op 200°C.",
+        "Snijd de zoete aardappel in blokjes en rooster 20-25 minuten in de oven.",
+        "Gaar de kabeljauw de laatste 10-12 minuten mee in de oven of in een pan.",
+        "Stoom de groente naar keuze in dezelfde tijd.",
+        "Serveer alles samen op een bord."
+      ] },
+    { "id": "glp-15", "title": "Vegetarische linzenbowl", "section": "glp1", "eiwit": "28 g", "kcal": "±400",
+      "ingredients": ["150 g linzen", "100 g edamame", "Komkommer", "Tomaat", "Spinazie", "Yoghurt-dressing"],
+      "steps": [
+        "Kook de linzen volgens de verpakking gaar (of gebruik voorgekookte linzen).",
+        "Kook de edamame kort in water.",
+        "Snijd de komkommer en tomaat in stukjes.",
+        "Verdeel de spinazie, linzen, edamame, komkommer en tomaat over een kom.",
+        "Besprenkel met de yoghurt-dressing."
+      ] },
+
+    { "id": "en-01", "title": "Power-kwarkbowl", "section": "energie", "eiwit": "±27 g", "kcal": "±380",
+      "ingredients": ["200 g Skyr", "30 g havermout", "100 g bessen", "1 el chiazaad", "15 g walnoten"],
+      "steps": [
+        "Schep de Skyr in een kom.",
+        "Strooi de havermout en chiazaad erover.",
+        "Voeg de bessen en walnoten toe.",
+        "Meng licht door elkaar en serveer."
+      ] },
+    { "id": "en-02", "title": "Kip-avocadowrap", "section": "energie", "eiwit": "±35 g", "kcal": "±430",
+      "ingredients": ["1 volkoren wrap", "100 g kip", "¼-½ avocado", "Groenten naar keuze", "Yoghurt-dressing"],
+      "steps": [
+        "Gaar de kip en snijd in reepjes.",
+        "Snijd of prak de avocado.",
+        "Beleg de wrap met kip, avocado en groenten naar keuze.",
+        "Voeg de yoghurt-dressing toe.",
+        "Rol de wrap stevig op."
+      ] },
+    { "id": "en-03", "title": "Warme havermout met extra eiwit", "section": "energie", "eiwit": "±25 g", "kcal": "±410",
+      "ingredients": ["40 g havermout", "200 ml melk", "100 g Skyr", "½ banaan", "Kaneel", "1 tl pindakaas"],
+      "steps": [
+        "Breng de melk aan de kook in een pannetje.",
+        "Voeg de havermout toe en laat 5 minuten op laag vuur pruttelen tot romig.",
+        "Roer de Skyr erdoor.",
+        "Snijd de banaan in plakjes en verdeel over de havermout.",
+        "Werk af met kaneel en de pindakaas."
+      ] },
+    { "id": "en-06", "title": "Hüttenkäse toast deluxe", "section": "energie", "eiwit": "±25 g", "kcal": "±390",
+      "ingredients": ["2 sneetjes volkorenbrood", "150 g hüttenkäse", "¼ avocado", "Tomaat", "Peper/kruiden"],
+      "steps": [
+        "Rooster de sneetjes brood.",
+        "Snijd of prak de avocado.",
+        "Beleg het brood met de hüttenkäse en avocado.",
+        "Voeg plakjes tomaat toe.",
+        "Breng op smaak met peper en kruiden naar keuze."
+      ] },
+    { "id": "en-08", "title": "Banaan-eiwitpannenkoek", "section": "energie", "eiwit": "±27 g", "kcal": "±390",
+      "ingredients": ["2 eieren", "½ banaan", "30 g havermout", "100 g Skyr", "Kaneel"],
+      "steps": [
+        "Prak de banaan fijn in een kom.",
+        "Voeg de eieren, havermout, Skyr en kaneel toe en mix tot een glad beslag.",
+        "Verhit een klein beetje olie of boter in een pan op middelhoog vuur.",
+        "Schep kleine scheppen beslag in de pan en bak per kant 2-3 minuten tot goudbruin."
+      ] },
+    { "id": "en-10", "title": "Kleine energie-smoothie", "section": "energie", "eiwit": "±24 g", "kcal": "±350",
+      "ingredients": ["150 g Skyr", "150 ml melk", "½ banaan", "1 el pindakaas", "Kaneel"],
+      "steps": [
+        "Doe alle ingrediënten in een blender.",
+        "Blend kort tot een gladde smoothie.",
+        "Giet in een glas en serveer direct."
+      ] },
+
+    { "id": "snel-02", "title": "Kipwrap voor onderweg", "section": "snel", "eiwit": "±25-30 g", "kcal": null,
+      "ingredients": ["1 volkoren wrap", "100 g kip", "Sla", "Komkommer", "Yoghurt-dressing"],
+      "steps": [
+        "Gaar de kip (of gebruik vooraf gegaarde kipreepjes) en snijd in stukken.",
+        "Snijd de sla en komkommer.",
+        "Beleg de wrap met kip, sla en komkommer.",
+        "Voeg de yoghurt-dressing toe en rol de wrap stevig op."
+      ] },
+    { "id": "snel-03", "title": "Tonijn power bowl", "section": "snel", "eiwit": "±25-30 g", "kcal": null,
+      "ingredients": ["100 g tonijn", "Gemengde sla", "Tomaat", "Komkommer", "Maïs", "Kleine portie rijst of quinoa"],
+      "steps": [
+        "Kook de rijst of quinoa volgens de verpakking gaar (of gebruik een voorgekookte portie).",
+        "Laat de tonijn en maïs uitlekken.",
+        "Snijd de tomaat en komkommer in stukjes.",
+        "Verdeel de sla, rijst of quinoa, tonijn, tomaat, komkommer en maïs over een kom."
+      ] },
+    { "id": "snel-04", "title": "Snelle omelet", "section": "snel", "eiwit": "±15-22 g", "kcal": null,
+      "ingredients": ["2-3 eieren", "Spinazie", "Tomaat", "Kaas"],
+      "steps": [
+        "Klop de eieren los in een kom.",
+        "Verhit een klein beetje olie in een pan op middelhoog vuur.",
+        "Voeg de spinazie en gesneden tomaat toe en laat kort slinken.",
+        "Giet de eieren erover, strooi de kaas erover en bak 5-7 minuten tot de omelet gaar is."
+      ] },
+    { "id": "snel-05", "title": "Tofu roerbak", "section": "snel", "eiwit": "±20-25 g", "kcal": null,
+      "ingredients": ["150 g tofu", "Wokgroenten", "Sojasaus", "Kleine portie rijst"],
+      "steps": [
+        "Snijd de tofu in blokjes en dep droog met keukenpapier.",
+        "Verhit een klein beetje olie in een wok of pan op hoog vuur.",
+        "Bak de tofu 3-4 minuten tot lichtbruin en voeg de wokgroenten toe.",
+        "Roerbak 3-5 minuten tot de groenten beetgaar zijn.",
+        "Maak op smaak met sojasaus en serveer met de rijst."
+      ] }
+  ]
+}
