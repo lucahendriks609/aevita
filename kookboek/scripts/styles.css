@@ -92,43 +92,104 @@ html, body {
   opacity: 0.85;
 }
 
-/* ---------- TOC ---------- */
-.toc { padding: 24mm 20mm; }
-.toc h2 {
-  font-size: 30px;
+/* ---------- GUIDELINES ---------- */
+.guidelines { padding: 24mm 20mm; }
+.guidelines h2 {
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 6mm;
+  margin-bottom: 4mm;
+}
+.guidelines .guidelines-lead {
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 150mm;
+  line-height: 1.7;
+  margin-bottom: 14mm;
+}
+.guideline-cards {
+  display: flex;
+  gap: 6mm;
+  margin-bottom: 12mm;
+}
+.guideline-card {
+  flex: 1;
+  border-radius: var(--radius-lg);
+  padding: 10mm 5mm;
+  text-align: center;
+}
+.guideline-card .g-val {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.guideline-card .g-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-top: 4mm;
+}
+.guideline-card .g-sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2mm;
+  line-height: 1.5;
+}
+
+/* ---------- TOC ---------- */
+.toc { padding: 22mm 18mm; }
+.toc h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4mm;
 }
 .toc .toc-lead {
   color: var(--muted);
-  font-size: 13px;
-  margin-bottom: 14mm;
-  max-width: 130mm;
+  font-size: 12px;
+  margin-bottom: 10mm;
+  max-width: 150mm;
   line-height: 1.6;
 }
-.toc-section { margin-bottom: 10mm; }
+.toc-columns {
+  column-count: 2;
+  column-gap: 12mm;
+}
+.toc-section {
+  break-inside: avoid;
+  margin-bottom: 7mm;
+}
 .toc-section .cat-label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 5px 14px;
+  padding: 4px 12px;
   border-radius: var(--radius-pill);
-  margin-bottom: 6mm;
+  margin-bottom: 4mm;
 }
 .toc-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding: 3mm 0;
-  border-bottom: 1px dashed var(--border);
-  font-size: 14px;
+  gap: 4mm;
+  padding: 2.2mm 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 12px;
   font-weight: 500;
 }
-.toc-row .dots { color: var(--muted-light); font-size: 11px; }
+.toc-row .toc-num {
+  flex-shrink: 0;
+  min-width: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+  padding: 2px 7px;
+}
 
 /* ---------- RECIPE PAGE ---------- */
 .recipe { padding: 20mm 18mm 16mm; display: flex; flex-direction: column; }

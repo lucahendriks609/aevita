@@ -38,7 +38,7 @@ function tocPage(pageNumById) {
     const rows = items.map(r => `
       <div class="toc-row">
         <span>${esc(r.title)}</span>
-        <span class="dots">${String(pageNumById[r.id]).padStart(2, '0')}</span>
+        <span class="toc-num" style="background:${sec.bg};color:${sec.color}">${String(pageNumById[r.id]).padStart(2, '0')}</span>
       </div>`).join('');
     return `
       <div class="toc-section">
@@ -50,8 +50,39 @@ function tocPage(pageNumById) {
   return `
   <section class="page toc">
     <h2>Inhoud</h2>
-    <div class="toc-lead">Alle recepten in dit boek zijn samengesteld en goedgekeurd door de officiële diëtist van Aevita.</div>
-    ${sections}
+    <div class="toc-lead">Alle recepten in dit boek zijn samengesteld door Aevita.</div>
+    <div class="toc-columns">${sections}</div>
+  </section>`;
+}
+
+function guidelinesPage() {
+  return `
+  <section class="page guidelines">
+    <h2>Dagelijkse richtlijnen</h2>
+    <div class="guidelines-lead">Drie waarden om op te letten als je met deze recepten aan de slag gaat: calorieën, eiwit en vezels. Hieronder de algemene richtlijn voor een gezonde volwassene.</div>
+
+    <div class="guideline-cards">
+      <div class="guideline-card" style="background:${'#FFF0EC'}">
+        <div class="g-val" style="color:#E85C3A">±2000-2500</div>
+        <div class="g-label">Kcal per dag</div>
+        <div class="g-sub">Vrouw ±2000 · man ±2500<br>(EU-referentie-inname)</div>
+      </div>
+      <div class="guideline-card" style="background:${'#E8ECFE'}">
+        <div class="g-val" style="color:#3753F0">0,8 g/kg</div>
+        <div class="g-label">Eiwit per dag</div>
+        <div class="g-sub">Per kg lichaamsgewicht<br>(Gezondheidsraad)</div>
+      </div>
+      <div class="guideline-card" style="background:${'#E0F7F1'}">
+        <div class="g-val" style="color:#00A37C">30-40 g</div>
+        <div class="g-label">Vezels per dag</div>
+        <div class="g-sub">Voor volwassenen<br>(Gezondheidsraad)</div>
+      </div>
+    </div>
+
+    <div class="source-note">
+      <div class="note-icon">i</div>
+      <div class="note-text"><b>Let op —</b> dit zijn algemene richtlijnen voor een gezonde volwassene (Voedingscentrum / Gezondheidsraad / EU-referentie-inname), geen persoonlijk advies. Bij gewichtsverlies, GLP-1-behandeling of vermoeidheid ligt de aanbevolen eiwitinname vaak hoger dan de 0,8 g/kg — vraag je eigen streefwaarde na bij je diëtist.</div>
+    </div>
   </section>`;
 }
 
@@ -90,7 +121,7 @@ function recipePage(r, pageNum) {
 
     <div class="source-note">
       <div class="note-icon">i</div>
-      <div class="note-text"><b>${esc(sec.label)} —</b> onderdeel van "${esc(sec.source_title)}", samengesteld door de officiële diëtist van Aevita.</div>
+      <div class="note-text"><b>${esc(sec.label)} —</b> onderdeel van "${esc(sec.source_title)}", samengesteld door Aevita.</div>
     </div>
 
     <div class="page-footer">
@@ -100,10 +131,11 @@ function recipePage(r, pageNum) {
   </section>`;
 }
 
-const pageNumById = Object.fromEntries(data.recipes.map((r, i) => [r.id, i + 3]));
+const pageNumById = Object.fromEntries(data.recipes.map((r, i) => [r.id, i + 4]));
 
 const pages = [
   coverPage(),
+  guidelinesPage(),
   tocPage(pageNumById),
   ...data.recipes.map(r => recipePage(r, pageNumById[r.id])),
 ];
