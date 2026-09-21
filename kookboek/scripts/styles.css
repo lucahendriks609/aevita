@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --blue: #3753F0;
+  --blue-light: #E8ECFE;
+  --blue-xlight: #F2F4FF;
+  --teal: #00BC8E;
+  --teal-dark: #00A37C;
+  --teal-light: #E0F7F1;
+  --teal-xlight: #F0FBF8;
+  --coral: #FF6B47;
+  --coral-dark: #E85C3A;
+  --coral-light: #FFF0EC;
+  --cream: #FAFFFE;
+  --dark: #002327;
+  --muted: #4A6B70;
+  --muted-light: #7AABB0;
+  --border: #D8EEE9;
+  --border-light: #EAF5F2;
+  --white: #FFFFFF;
+  --lilac: #BDC2FF;
+  --gradient-brand: linear-gradient(-60deg, #BDC2FF 0%, #338EF0 45%, #00BC8E 100%);
+  --gradient: linear-gradient(135deg, #00BC8E 0%, #3753F0 100%);
+  --font-brand: 'Comfortaa', system-ui, -apple-system, sans-serif;
+  --radius: 20px;
+  --radius-lg: 32px;
+  --radius-pill: 100px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+@page { size: A4; margin: 0; }
+
+html, body {
+  font-family: var(--font-brand);
+  color: var(--dark);
+  background: var(--cream);
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  page-break-after: always;
+  background: var(--cream);
+}
+.page:last-child { page-break-after: auto; }
+
+/* ---------- COVER ---------- */
+.cover {
+  background: var(--gradient-brand);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22mm 20mm;
+  color: var(--white);
+}
+.cover .wordmark {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.cover .cover-main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.cover .eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 14px;
+}
+.cover h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  max-width: 480px;
+}
+.cover .subtitle {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 420px;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+.cover .tagline {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+/* ---------- TOC ---------- */
+.toc { padding: 24mm 20mm; }
+.toc h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 6mm;
+}
+.toc .toc-lead {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 14mm;
+  max-width: 130mm;
+  line-height: 1.6;
+}
+.toc-section { margin-bottom: 10mm; }
+.toc-section .cat-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 6mm;
+}
+.toc-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 3mm 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 14px;
+  font-weight: 500;
+}
+.toc-row .dots { color: var(--muted-light); font-size: 11px; }
+
+/* ---------- RECIPE PAGE ---------- */
+.recipe { padding: 20mm 18mm 16mm; display: flex; flex-direction: column; }
+.recipe-header { margin-bottom: 8mm; }
+.cat-pill {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 5mm;
+}
+.recipe h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 3mm;
+}
+.recipe .recipe-subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 140mm;
+}
+
+.meta-row { display: flex; gap: 8mm; margin: 7mm 0 8mm; }
+.meta-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.meta-chip svg { width: 14px; height: 14px; stroke: var(--teal-dark); flex-shrink: 0; }
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4mm;
+  margin-bottom: 9mm;
+}
+.nutrition-cell {
+  background: var(--teal-xlight);
+  border-radius: var(--radius);
+  padding: 5mm 3mm;
+  text-align: center;
+}
+.nutrition-cell .val { font-size: 20px; font-weight: 700; color: var(--teal-dark); line-height: 1; }
+.nutrition-cell .lbl { font-size: 10px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2mm; }
+
+.body-grid { display: grid; grid-template-columns: 68mm 1fr; gap: 10mm; flex: 1; }
+
+.ingredients h3, .steps h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 5mm;
+}
+.ingredients ul { list-style: none; }
+.ingredients li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 3mm;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.ingredients li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 5px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--coral);
+}
+
+.steps ol { list-style: none; counter-reset: step; }
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 5mm;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0; top: 0;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dietist-tip {
+  margin-top: auto;
+  background: var(--blue-xlight);
+  border-radius: var(--radius);
+  padding: 6mm 7mm;
+  display: flex;
+  gap: 5mm;
+  align-items: flex-start;
+}
+.dietist-tip .tip-icon {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700;
+}
+.dietist-tip .tip-text { font-size: 12.5px; line-height: 1.55; color: var(--dark); }
+.dietist-tip .tip-text b { color: var(--blue); }
+
+.page-footer {
+  position: absolute;
+  bottom: 10mm;
+  left: 18mm;
+  right: 18mm;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted-light);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}

@@ -1,0 +1,112 @@
+{
+  "book": {
+    "title": "Het Aevita Kookboek",
+    "subtitle": "Dietist-goedgekeurde recepten voor elke dag",
+    "tagline": "Samengesteld en goedgekeurd door de officiële diëtist van Aevita"
+  },
+  "categories": [
+    { "id": "ontbijt", "label": "Ontbijt", "color": "#E85C3A", "bg": "#FFF0EC" },
+    { "id": "lunch",   "label": "Lunch",   "color": "#3753F0", "bg": "#E8ECFE" },
+    { "id": "diner",   "label": "Diner",   "color": "#00A37C", "bg": "#E0F7F1" },
+    { "id": "snack",   "label": "Snack",   "color": "#5B4FCF", "bg": "#EEECFB" }
+  ],
+  "recipes": [
+    {
+      "id": "havermout-bowl",
+      "title": "Havermout bowl met rood fruit",
+      "category": "ontbijt",
+      "subtitle": "Romig, vezelrijk en binnen 10 minuten klaar",
+      "prep_time": "10 min",
+      "servings": "1 portie",
+      "nutrition": { "kcal": 320, "eiwit_g": 14, "koolhydraten_g": 45, "vet_g": 9 },
+      "ingredients": [
+        "50 g havermout",
+        "200 ml plantaardige melk",
+        "1 el chiazaad",
+        "100 g gemengd rood fruit",
+        "1 el amandelpasta",
+        "Snufje kaneel"
+      ],
+      "steps": [
+        "Breng de plantaardige melk aan de kook en voeg de havermout toe.",
+        "Laat 5 minuten op laag vuur pruttelen tot een romige massa ontstaat.",
+        "Roer het chiazaad erdoor en laat 2 minuten rusten.",
+        "Schep in een kom en top af met het rode fruit, amandelpasta en kaneel."
+      ],
+      "dietist_tip": "Chiazaad levert extra omega-3 en houdt je langer verzadigd — ideaal voor een stabiele bloedsuikerspiegel in de ochtend."
+    },
+    {
+      "id": "kip-quinoa-bowl",
+      "title": "Kip-quinoa bowl met tahin-dressing",
+      "category": "lunch",
+      "subtitle": "Eiwitrijk, mee te nemen, koud of warm te eten",
+      "prep_time": "20 min",
+      "servings": "2 porties",
+      "nutrition": { "kcal": 480, "eiwit_g": 38, "koolhydraten_g": 42, "vet_g": 16 },
+      "ingredients": [
+        "150 g quinoa",
+        "250 g kipfilet",
+        "1 courgette",
+        "100 g cherrytomaatjes",
+        "1 el tahin",
+        "1 limoen (sap)",
+        "Zout, peper, komijn"
+      ],
+      "steps": [
+        "Kook de quinoa volgens de verpakking gaar en laat afkoelen.",
+        "Kruid de kipfilet met komijn, zout en peper en bak gaar in een pan.",
+        "Snijd de courgette en cherrytomaatjes en meng door de quinoa.",
+        "Meng tahin met limoensap en een scheutje water tot een dressing.",
+        "Verdeel de kip over de bowls en besprenkel met de dressing."
+      ],
+      "dietist_tip": "Quinoa is een complete eiwitbron — in combinatie met kip haal je hier moeiteloos 35+ gram eiwit per portie uit."
+    },
+    {
+      "id": "zalm-groenten-oven",
+      "title": "Ovenzalm met geroosterde groenten",
+      "category": "diner",
+      "subtitle": "Één ovenschaal, minimale afwas, maximaal effect",
+      "prep_time": "30 min",
+      "servings": "2 porties",
+      "nutrition": { "kcal": 510, "eiwit_g": 36, "koolhydraten_g": 28, "vet_g": 24 },
+      "ingredients": [
+        "2 zalmfilets",
+        "300 g broccoli",
+        "200 g zoete aardappel",
+        "1 el olijfolie",
+        "1 teen knoflook",
+        "Citroen, zout, peper"
+      ],
+      "steps": [
+        "Verwarm de oven voor op 200°C.",
+        "Snijd de zoete aardappel in blokjes en meng met olijfolie, knoflook, zout en peper.",
+        "Rooster 15 minuten voor, voeg dan de broccoli en zalmfilets toe.",
+        "Bak nog 12–15 minuten tot de zalm gaar is.",
+        "Serveer met een schijfje citroen."
+      ],
+      "dietist_tip": "Vette vis zoals zalm levert omega-3 vetzuren die ontstekingsremmend werken — streef naar 2x per week vette vis."
+    },
+    {
+      "id": "cottage-cheese-dip",
+      "title": "Cottage cheese dip met groentesticks",
+      "category": "snack",
+      "subtitle": "Eiwitrijke snack tegen de middagdip",
+      "prep_time": "5 min",
+      "servings": "1 portie",
+      "nutrition": { "kcal": 150, "eiwit_g": 16, "koolhydraten_g": 8, "vet_g": 5 },
+      "ingredients": [
+        "150 g cottage cheese",
+        "1 theel paprikapoeder",
+        "Halve komkommer",
+        "1 winterwortel",
+        "Bieslook naar smaak"
+      ],
+      "steps": [
+        "Meng de cottage cheese met paprikapoeder en bieslook.",
+        "Snijd komkommer en winterwortel in sticks.",
+        "Serveer de dip met de groentesticks."
+      ],
+      "dietist_tip": "Cottage cheese is een trage eiwitbron — perfect als snack tussen de maaltijden door om verzadigd te blijven."
+    }
+  ]
+}

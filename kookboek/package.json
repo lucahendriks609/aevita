@@ -1,0 +1,13 @@
+{
+  "name": "aevita-kookboek",
+  "version": "1.0.0",
+  "description": "Bouwscript voor het Aevita Kookboek e-book (HTML -> print-ready PDF)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}
