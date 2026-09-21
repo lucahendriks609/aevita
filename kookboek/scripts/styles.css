@@ -101,41 +101,46 @@ html, body {
 }
 .guidelines .guidelines-lead {
   color: var(--muted);
-  font-size: 13px;
-  max-width: 150mm;
-  line-height: 1.7;
-  margin-bottom: 14mm;
+  font-size: 12.5px;
+  max-width: 155mm;
+  line-height: 1.65;
+  margin-bottom: 10mm;
 }
-.guideline-cards {
-  display: flex;
-  gap: 6mm;
-  margin-bottom: 12mm;
-}
-.guideline-card {
-  flex: 1;
-  border-radius: var(--radius-lg);
-  padding: 10mm 5mm;
-  text-align: center;
-}
-.guideline-card .g-val {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1;
-}
-.guideline-card .g-label {
+.formula-section { margin-bottom: 6mm; }
+.formula-section .cat-label {
+  display: inline-flex;
   font-size: 11px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--muted);
-  margin-top: 4mm;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 3mm;
 }
-.guideline-card .g-sub {
+.formula-box {
+  border-radius: var(--radius);
+  padding: 5mm 6mm;
+}
+.formula-box .f-formula {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 1.5mm;
+}
+.formula-box .f-steps {
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--dark);
+}
+.formula-box .f-example {
   font-size: 11px;
   color: var(--muted);
-  margin-top: 2mm;
+  margin-top: 3mm;
+  padding-top: 3mm;
+  border-top: 1px dashed var(--border);
   line-height: 1.5;
 }
+.formula-box .f-example b { color: var(--dark); }
 
 /* ---------- TOC ---------- */
 .toc { padding: 22mm 18mm; }
