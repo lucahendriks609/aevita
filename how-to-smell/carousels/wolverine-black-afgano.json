@@ -1,0 +1,28 @@
+{
+  "_note": "SAMPLE carousel. Slides 4 and 5 copy are placeholder lines, not supplied copy. Replace when real copy exists.",
+  "issue": "01",
+  "total": 7,
+  "character": { "lines": ["WOLVERINE"], "archetype": "a rugged antihero in a smoky forest" },
+  "fragrance": { "brand": "NASOMATTO", "name": "Black Afgano", "mood": ["SMOKE", "RESIN", "ASH"] },
+  "accent": "steel",
+  "images": { "1": null, "2": null, "3": null, "4": null, "5": null, "6": null, "7": null },
+  "imageBriefs": {
+    "1": "Rugged silhouette, smoky forest, wide",
+    "2": "Empty room, one lit window, negative space",
+    "3": "Close-up detail: knuckles, scarred skin",
+    "4": "Overturned table, broken glass, low light",
+    "5": "Darkest frame: figure half lost in smoke",
+    "6": "Bottle, hero shot, smoke and wet stone",
+    "7": "Single symbolic object, last frame"
+  },
+  "slides": {
+    "2": { "lines": ["Sleep four hours.", "Call it discipline,", "not emotional", "avoidance."] },
+    "3": { "lines": ["Make a bad decision.", "Make it look", "like a look."] },
+    "4": { "lines": ["Apologise to no one.", "Especially the furniture."] },
+    "5": { "lines": ["Be calm in the room", "that is on fire."] },
+    "6": { "wear": "Wear Black Afgano", "desc": ["Smell like heartbreak", "with administrative privileges."] },
+    "7": { "lines": ["Do not wear this", "to become them.", "Wear it because", "you already are."] }
+  },
+  "seriesLabel": "How to smell like you’re the problem",
+  "footers": { "6": "Scent study / 06", "7": "Fictional damage, real fragrance" }
+}

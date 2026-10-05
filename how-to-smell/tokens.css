@@ -1,0 +1,50 @@
+/* HOW TO SMELL LIKE YOU'RE THE PROBLEM — design tokens
+   Two families, three weights: Cormorant Garamond 500/600 (+500 italic), Inter 500. */
+
+@font-face { font-family: "Cormorant Garamond"; font-weight: 500; font-style: normal; src: url("fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 500; font-style: italic; src: url("fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2"); }
+@font-face { font-family: "Cormorant Garamond"; font-weight: 600; font-style: normal; src: url("fonts/cormorant-garamond-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; font-style: normal; src: url("fonts/inter-latin-500-normal.woff2") format("woff2"); }
+
+:root {
+  /* foundation */
+  --obsidian: #080808;
+  --ink: #11100F;
+  --charcoal: #1A1918;
+  --graphite: #252321;
+  --bone: #E9E2D6;
+  --smoke: #A39D94;
+
+  /* accents: ONE per carousel */
+  --blood: #81191C;
+  --oxblood: #451012;
+  --gold: #A48145;
+  --emerald: #153B32;
+  --violet: #33233D;
+  --steel: #7A8284;
+
+  /* per-carousel accent (override on .slide) + a lifted tone for small type/lines */
+  --accent: var(--steel);
+  --accent-lift: #A9B2B4;
+
+  /* type */
+  --serif: "Cormorant Garamond", "Bodoni Moda", Georgia, serif;
+  --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  /* canvas + safe zones (px @ 1080x1920) */
+  --w: 1080px;
+  --h: 1920px;
+  --m-left: 96px;
+  --m-right: 132px;     /* 120px TikTok rail + breathing room */
+  --m-top: 96px;
+  --m-bottom: 232px;    /* 220px TikTok caption/UI zone + breathing room */
+  --frame-inset: 36px;
+}
+
+/* accent presets, set on .slide via data-accent */
+[data-accent="steel"]   { --accent: #7A8284; --accent-lift: #A9B2B4; }
+[data-accent="emerald"] { --accent: #153B32; --accent-lift: #3F7A68; }
+[data-accent="oxblood"] { --accent: #451012; --accent-lift: #9A3A3D; }
+[data-accent="blood"]   { --accent: #81191C; --accent-lift: #C4474B; }
+[data-accent="violet"]  { --accent: #33233D; --accent-lift: #8A6C9C; }
+[data-accent="gold"]    { --accent: #A48145; --accent-lift: #C9A769; }
