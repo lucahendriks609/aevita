@@ -22,6 +22,14 @@ A carousel is one JSON file (see `carousels/wolverine-black-afgano.json`): chara
 
 Tokens: `tokens.css`. Components: `slides.css`. Slide layouts: `templates.mjs`.
 
-## Sample
+## Workflow rules
 
-`carousels/wolverine-black-afgano.json` is a sample. Slides 4 and 5 copy are placeholder lines, not supplied copy.
+- **Luca generates all images himself.** Claude never generates, buys or downloads images (no Artlist, Higgsfield or other credit-based tools) and never invents a bottle.
+- Luca supplies exact copy and the images, in slide order. The `imageBriefs` in each spec are Luca's art direction, kept for his own reference when he generates the images.
+- Copy is used exactly as written: no rewriting, shortening or added words. Line breaks only where given.
+- Until an image exists, its slide renders as IMAGE PENDING.
+- Slide 6 plate shows only Luca's text: CHARACTER STUDY / brand / fragrance name / notes.
+
+## Specs
+
+- `carousels/wolverine-black-afgano.json`: Issue 01, with Luca's final copy, notes and art direction. Images not yet added.

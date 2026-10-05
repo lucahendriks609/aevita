@@ -112,9 +112,9 @@ export function slide(spec, n) {
         <div class="frame accent"></div>
         ${label(spec)}${idx(n, total)}
         <div class="copy-serif" style="position:absolute;left:var(--m-left);top:190px;font-size:72px">${esc(s.wear)}</div>
-        <div class="copy-serif" style="position:absolute;left:var(--m-left);right:var(--m-right);top:1236px;font-size:40px;font-style:italic;color:var(--smoke)">${lines(s.desc)}</div>
+        ${s.desc ? `<div class="copy-serif" style="position:absolute;left:var(--m-left);right:var(--m-right);top:1236px;font-size:40px;font-style:italic;color:var(--smoke)">${lines(s.desc)}</div>` : ""}
         <div class="plate" style="top:1360px">
-          <div class="p-top"><span>Character study</span><span>${esc(spec.character.lines.join(" "))}</span></div>
+          <div class="p-top"><span>Character study</span></div>
           <div class="p-brand">${esc(f.brand)}</div>
           <div class="p-name">${esc(f.name)}</div>
           <div class="p-mood">${f.mood.map(esc).join(" &nbsp;/&nbsp; ")}</div>
